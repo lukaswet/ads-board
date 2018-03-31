@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-  <a class="navbar-brand" href="<%= root_path %>">BOARD</a>
+  <a class="navbar-brand" href="<%= root_path %>">ADS BOARD</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,13 +8,14 @@
 
         <% if(!user_signed_in?) %>
 
-          <li><%= link_to "Log in", new_user_session_path %></li>&nbsp;&nbsp;
-          <li><%= link_to "Sign up", new_user_registration_path %></li>
+          <li><%= link_to "Sign up", new_user_registration_path, :class => "btn btn-dark" %></li>&nbsp;&nbsp;
+          <li><%= link_to "Log in", new_user_session_path, class: 'btn btn-primary' %></li>&nbsp;&nbsp;
 
         <% else %>
 
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%= image_tag gravatar_url(current_user.email), class: 'img-thumbnail gravatar-thumb', alt: "" %> &nbsp;
               <%= current_user.fullname %>
             </button>
 
