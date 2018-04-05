@@ -1,0 +1,18 @@
+<br/><br/><br/>
+<div class="row">
+  <div class="col-md-3">
+    <%= image_tag gravatar_url(@user) ,class: "gravatar-full" %>
+
+    <div class="card">
+      <div class="card-header">Verification</div>
+      <div class="card-body">
+        Email Address<br/>
+        Phone Number
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <h2><%= @user.fullname %></h2>
+    <%=  @user.description %>
+  </div>
+</div>

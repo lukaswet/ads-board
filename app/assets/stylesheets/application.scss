@@ -1,22 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require header
+ *= require buttons
+ *= require gravatar
+ */
+
 @import "bootstrap";
 @import "toastr";
+
+
 
 a:hover {
   text-decoration: none;
 }
 
-.gravatar-thumb {
-  width: 28px;
+body {
+  color: #565a5c;
+  background-color: #F8F8F8;
 }
 
-.gravatar-mid {
-  width: 48px;
+.container {
+  width: 80%;
 }
 
-.gravatar-large {
-  width: 98px;
+
+
+.card .card-header {
+  color: #565a5c;
+  background-color: #edefed;
+  font-size: 18px;
+  font-weight: 400
 }
 
-.gravatar-full {
-  width: 100%;
+.row-space-1 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.row-space-2 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.row-space-3 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.description {
+  color: #575757;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
 }
