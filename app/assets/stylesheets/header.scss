@@ -1,11 +1,13 @@
 .navbar {
   background-color: #FFFFFF;
+  max-width: 100%;
 }
 
 .navbar .navbar-brand {
+  font-family: 'Francois One', sans-serif;
   color: #ff1b1b;
-  font-size: 2em;
-  font-weight: 400;
+  font-size: 37px;
+  margin-left: 3%;
 }
 
 .navbar .navbar-brand:hover {
@@ -14,4 +16,10 @@
 
 .dropdown-menu {
   width: 100%;
+  align-content: center;
 }
+
+.navbar-nav {
+  margin-right: 3%;
+}
+
