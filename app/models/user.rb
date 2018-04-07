@@ -7,6 +7,8 @@ class User < ApplicationRecord
 
   validates :fullname, presence: true, length: {maximum: 55}
 
+  has_many :advertisements
+
   def self.from_omniauth(auth)
     user = User.where(email: auth.info.email).first
     if user
